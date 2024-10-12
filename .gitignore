@@ -1,0 +1,13 @@
+node_modules
+.env
+
+CREATE DATABASE api_auth;
+
+USE api_auth;
+
+CREATE TABLE utilisateurs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  telephone VARCHAR(20) NOT NULL,
+  mot_de_passe VARCHAR(255) NOT NULL
+);
